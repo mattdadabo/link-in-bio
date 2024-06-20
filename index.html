@@ -7,12 +7,31 @@
       * {
         border: 1px red solid;
       }
+
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
     </style>
   </head>
     <body>
       <div class="main-container">
         <div class="image-row">
-          <img src="/workspaces/link-in-bio/Photos/ElliePic.jpg" alt="Picture of Golden Retriever">
+          <img class="avatar-image" src="/workspaces/link-in-bio/ElliePic.jpg" alt="Picture of Golden Retriever">
         </div>
 
         <div class="name-row">
@@ -20,20 +39,31 @@
         </div>
 
         <div class="social-icons-row">
-          socials
+          <a href="https://www.linkedin.com/in/matt-dadabo-416b9027/">LinkedIn</a>
+          <a href="https://www.instagram.com/mattdadabo/">Instagram</a>
+          <a href="https://www.goodreads.com/user/show/137838480-matthew-philip">GoodReads</a>
         </div>
 
         <div class="links-row">
           <div class="item">
-            First link
+            <img class="thumbnail" src="/workspaces/link-in-bio/thumbnails/Restaurant.jpg" alt="Restaurant Food">
+            <a target="_blank" href="https://www.theinfatuation.com/chicago">
+              Chicago Restaurants
+            </a>
           </div>
     
           <div class="item">
-            Second link
+            <img class="thumbnail" src="/workspaces/link-in-bio/thumbnails/Running.jpg" alt="A person Running">
+            <a target="_blank" href="https://www.runguides.com/chicago/runs">
+              Road Running Race Calender
+            </a>
           </div>
     
           <div class="item">
-            Third link
+            <img class="thumbnail" src="/workspaces/link-in-bio/thumbnails/StreetFest.jpg" alt="A street festival">
+            <a target="_blank" href="https://www.choosechicago.com/articles/festivals-special-events/chicago-festival-event-guide/">
+              Chicago Street Festival Guide
+            </a>
           </div>
         </div> <!-- links-row -->
       </div> <!-- main-container -->
