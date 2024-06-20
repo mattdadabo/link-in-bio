@@ -3,14 +3,26 @@
   <head>
     <title>Links in Bio Page</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       * {
         border: 1px red solid;
       }
 
+      html {
+        min-height:100%;
+      }
+
       body {
+        min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
+        background: radial-gradient(circle at 50% 50%, #2e275c, #2b3868, #2e5674, #317980, #348c75, #36995c, #39a63c, #61b33b);
+        color: rgba(255, 255, 255, 1.0);
+      }
+
+      a {
+        color: color: rgba(255, 255, 255, 1.0);
       }
 
       .avatar-image {
@@ -25,6 +37,39 @@
         height: 48px;
         border-radius: 48px;
         object-fit: cover;
+      }
+
+      .item {
+        background-color: rgba(245, 144, 39, 0.85);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
   </head>
@@ -47,21 +92,21 @@
         <div class="links-row">
           <div class="item">
             <img class="thumbnail" src="/workspaces/link-in-bio/thumbnails/Restaurant.jpg" alt="Restaurant Food">
-            <a target="_blank" href="https://www.theinfatuation.com/chicago">
+            <a class="link-text" target="_blank" href="https://www.theinfatuation.com/chicago">
               Chicago Restaurants
             </a>
           </div>
     
           <div class="item">
             <img class="thumbnail" src="/workspaces/link-in-bio/thumbnails/Running.jpg" alt="A person Running">
-            <a target="_blank" href="https://www.runguides.com/chicago/runs">
+            <a class="link-text" target="_blank" href="https://www.runguides.com/chicago/runs">
               Road Running Race Calender
             </a>
           </div>
     
           <div class="item">
             <img class="thumbnail" src="/workspaces/link-in-bio/thumbnails/StreetFest.jpg" alt="A street festival">
-            <a target="_blank" href="https://www.choosechicago.com/articles/festivals-special-events/chicago-festival-event-guide/">
+            <a class="link-text" target="_blank" href="https://www.choosechicago.com/articles/festivals-special-events/chicago-festival-event-guide/">
               Chicago Street Festival Guide
             </a>
           </div>
